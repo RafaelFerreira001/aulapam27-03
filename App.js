@@ -1,21 +1,46 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer} from "@react-navigation/native";
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { AntDesign } from '@expo/vector-icons';
 
-import Nike from './Components/Nike';
-import Adidas from './Components/Adidas';
-import Mizuno from './Components/MIzuno';
+import Nike from "./components/Nike";
+import Mizuno from "./components/Mizuno";
+import Adidas from "./components/Adidas";
 
-const Drawer = createDrawerNavigator();
+
+
+const Menu = createDrawerNavigator().Navigator;
+const ItensMenu = createDrawerNavigator().Screen;
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator>
-        <Drawer.Screen name='Nike' component={Nike}/>
-        <Drawer.Screen name='Adidas' component={Adidas}/>
-        <Drawer.Screen name='Mizuno' component={Mizuno}/>
-        
-      </Drawer.Navigator>
+      
+        <Menu screenOptions={{
+          tabBarStyle: {
+            backgroundColor: "#ccc"              
+          },
+          tabBarLabelStyle: {
+            fontSize: 20,
+            fontWeight: 'bold',
+          },
+          tabBarActiveBackgroundColor: "#fff",
+          tabBarInactiveTintColor: "#555",
+          tabBarActiveTintColor: "#222",
+          tabBarLabelPosition: "beside-icon"
+
+        }}
+        >
+          <ItensMenu name="Nike" component={Nike}
+            options={{
+              tabBarIcon:({color, size})=>(<AntDesign name="check" size={size} color={color} />),
+              tabBarBadge: 4,
+            }}
+          />
+          <ItensMenu name="Mizuno" component={Mizuno}/>
+          <ItensMenu name="Adidas" component={Adidas}/>
+        </Menu>
+      
     </NavigationContainer>
   );
 }
+

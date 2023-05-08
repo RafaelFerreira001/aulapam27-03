@@ -1,10 +1,10 @@
 import { NavigationContainer} from "@react-navigation/native";
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { AntDesign } from '@expo/vector-icons';
 
-import Nike from "./components/Nike";
+
+import Filme from "./components/Filme";
 import Mizuno from "./components/Mizuno";
-import Adidas from "./components/Adidas";
+import Serie from "./Components/Serie";
 
 
 
@@ -30,14 +30,10 @@ export default function App() {
 
         }}
         >
-          <ItensMenu name="Nike" component={Nike}
-            options={{
-              tabBarIcon:({color, size})=>(<AntDesign name="check" size={size} color={color} />),
-              tabBarBadge: 4,
-            }}
+          <ItensMenu name="Filme" component={Filme}
           />
           <ItensMenu name="Mizuno" component={Mizuno}/>
-          <ItensMenu name="Adidas" component={Adidas}/>
+          <ItensMenu name="Serie" component={Serie}/>
         </Menu>
       
     </NavigationContainer>

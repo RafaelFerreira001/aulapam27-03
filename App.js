@@ -1,9 +1,9 @@
 import { NavigationContainer} from "@react-navigation/native";
 import { createDrawerNavigator } from '@react-navigation/drawer';
-
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Filme from "./components/Filme";
-import Mizuno from "./components/Mizuno";
+import Desenho from "./Components/Desenho";
 import Serie from "./Components/Serie";
 
 
@@ -16,24 +16,38 @@ export default function App() {
     <NavigationContainer>
       
         <Menu screenOptions={{
-          tabBarStyle: {
+          drawerLabelStyle: {
             backgroundColor: "#ccc"              
           },
-          tabBarLabelStyle: {
+          drawerLabelStyle: {
             fontSize: 20,
             fontWeight: 'bold',
           },
-          tabBarActiveBackgroundColor: "#fff",
-          tabBarInactiveTintColor: "#555",
-          tabBarActiveTintColor: "#222",
-          tabBarLabelPosition: "beside-icon"
+          drawerActiveBackgroundColor: "pink",
+          drawerInactiveTintColor: "gray",
+          drawerActiveTintColor: "black",
+          drawerLabelPosition: "beside-icon"
 
         }}
         >
           <ItensMenu name="Filme" component={Filme}
+          options={{
+            drawerIcon:({size})=>(<MaterialCommunityIcons name="movie-open" size={size} color={"black"} />),
+            
+          }}
           />
-          <ItensMenu name="Mizuno" component={Mizuno}/>
-          <ItensMenu name="Serie" component={Serie}/>
+          <ItensMenu name="Desenho" component={Desenho}
+          options={{
+            drawerIcon:({size})=>(<MaterialCommunityIcons name="emoticon-excited" size={size} color={"black"} />),
+            
+          }}/>
+          <ItensMenu name="Serie" component={Serie}
+          options={{
+            drawerIcon:({size})=>(<MaterialCommunityIcons name="netflix" size={size} color={"black"} />),
+            
+          }}
+          />
+          
         </Menu>
       
     </NavigationContainer>

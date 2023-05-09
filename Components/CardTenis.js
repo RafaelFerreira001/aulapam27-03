@@ -26,8 +26,8 @@ const estilo = StyleSheet.create({
         height: 500,
         borderRadius: 10,
         justifyContent: "space-between",
-        marginBottom: 300,
-        marginTop:50
+        marginBottom:340,
+
         
         
                
@@ -74,6 +74,7 @@ const estilo = StyleSheet.create({
         backgroundColor:"#040404c4",
         color: "pink",
         textAlign: "center",
+        
         
     },
 

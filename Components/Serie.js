@@ -25,12 +25,12 @@ export default function Serie() {
     },
     {
       id:"3",
-      imagem: require("../assets/Filme/FilmeCD.jpg"),
-      titulo: "Creed I - Nascido para lutar",
+      imagem: require("../assets/Serie/b99.jpg"),
+      titulo: "Brooklyn Nine Nine",
       desc: "DESCRIÇÃO",
-      desctxt:"Adonis vai para Philadelphia, o local da lendária luta de Apollo Creed contra um aguerrido novato chamado Rocky Balboa. Já na Cidade do Amor Fraternal, Adonis encontra Rocky (Stallone) e pede para que ele seja seu treinador. Apesar de sua insistência em se afastar do mundo das lutas por bons motivos, Rocky enxerga em Adonis a força e a determinação que ele conheceu em Apollo - seu feroz rival que acabou se tornando seu melhor amigo.",
+      desctxt:"Situado na 99.ª delegacia fictícia do Departamento de Polícia de Nova York, no Brooklyn, Brooklyn Nine-Nine segue uma equipe de detetives liderados pelo capitão Raymond Holt (Andre Braugher), recém-nomeado e muito sério. Os detetives incluem Jake Peralta (Andy Samberg), que tem uma alta taxa de prisões bem-sucedidas e casos resolvidos, apesar de sua atitude relaxada, despreocupada e (às vezes) infantil. Ele finalmente se apaixona por sua parceira severa, nerd, amável, mas adorável, Amy Santiago (Melissa Fumero).",
       genero:"GENERO:",
-      generotxt:"Ação",
+      generotxt:"Comédia",
     }
   ];
  

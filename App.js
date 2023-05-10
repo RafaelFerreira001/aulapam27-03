@@ -17,16 +17,19 @@ export default function App() {
       
         <Menu screenOptions={{
           drawerLabelStyle: {
-            backgroundColor: "#ccc"              
+            color: "red"    
           },
           drawerLabelStyle: {
             fontSize: 20,
             fontWeight: 'bold',
+            
           },
-          drawerActiveBackgroundColor: "pink",
+          drawerActiveBackgroundColor: "#8B82F4",
           drawerInactiveTintColor: "gray",
           drawerActiveTintColor: "black",
-          drawerLabelPosition: "beside-icon"
+          drawerLabelPosition: "beside-icon",
+          
+          
 
         }}
         >

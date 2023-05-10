@@ -4,7 +4,7 @@ const estilo = StyleSheet.create({
     container: {
       
       flex: 1,
-      backgroundColor: '#a0a377',
+      backgroundColor: 'black',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -12,6 +12,7 @@ const estilo = StyleSheet.create({
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
+      backgroundColor: '#222222',
     },
     container3: {
       flex: 1,

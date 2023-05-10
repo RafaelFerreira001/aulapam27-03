@@ -2,7 +2,7 @@ import { ImageBackground, Text } from "react-native";
 import { StyleSheet} from 'react-native';
 
 
-const CardTenis = ({imagem,titulo,desc,desctxt,genero,generotxt})=>{
+const CardTenis = ({imagem,titulo,desc,desctxt,genero,generotxt,avaliacao,avaliacaotxt})=>{
     return(
         <ImageBackground
             style={estilo.titulo}
@@ -15,6 +15,8 @@ const CardTenis = ({imagem,titulo,desc,desctxt,genero,generotxt})=>{
             <Text style={estilo.filme_desctxt}>{desctxt}</Text>
             <Text style={estilo.filme_genero}>{genero}</Text>
             <Text style={estilo.filme_desctxt}>{generotxt}</Text>
+            <Text style={estilo.filme_avaliacao}>{avaliacao}</Text>
+            <Text style={estilo.filme_avaliacaotxt}>{avaliacaotxt}</Text>
         </ImageBackground>
     );
 }
@@ -26,7 +28,7 @@ const estilo = StyleSheet.create({
         height: 500,
         borderRadius: 10,
         justifyContent: "space-between",
-        marginBottom:340,
+        marginBottom:413,
 
         
         
@@ -44,7 +46,7 @@ const estilo = StyleSheet.create({
     filme_descricao:{
         fontSize: 18,
         padding:5,       
-        backgroundColor:"#040404c4",
+        backgroundColor:"black",
         color: "pink",
         textAlign: "center",
         marginTop: 465
@@ -62,11 +64,9 @@ const estilo = StyleSheet.create({
     filme_genero:{
         fontSize: 18,
         padding:5,       
-        backgroundColor:"#040404c4",
+        backgroundColor:"black",
         color: "pink",
         textAlign: "center",
-        
-        
     },
     filme_generotxt:{
         fontSize: 16,
@@ -74,8 +74,20 @@ const estilo = StyleSheet.create({
         backgroundColor:"#040404c4",
         color: "pink",
         textAlign: "center",
-        
-        
+    },
+    filme_avaliacao:{
+        fontSize: 18,
+        padding:5,       
+        backgroundColor:"black",
+        color: "pink",
+        textAlign: "center",
+    },
+    filme_avaliacaotxt:{
+        fontSize: 16,
+        padding:5,       
+        backgroundColor:"pink",
+        color: "black",
+        textAlign: "center",
     },
 
     

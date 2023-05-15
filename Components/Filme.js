@@ -17,7 +17,7 @@ export default function Filme() {
       genero:"GENERO:",
       generotxt:"Aventura",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt: 5,
+      avaliacaotxt: 4.5,
     },
     {
       id:"2",
@@ -28,7 +28,7 @@ export default function Filme() {
       genero:"GENERO:",
       generotxt:"Ação",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,2/5,0",
+      avaliacaotxt:4,
     },
     {
       id:"3",
@@ -39,7 +39,7 @@ export default function Filme() {
       genero:"GENERO:",
       generotxt:"Ação",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,4/5,0",
+      avaliacaotxt:4,
     }
   ];
  

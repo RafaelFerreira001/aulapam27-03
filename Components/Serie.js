@@ -14,7 +14,7 @@ export default function Serie() {
       genero:"GENERO:",
       generotxt:"Aventura/Ação",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,6/5,0",
+      avaliacaotxt:4.6,
     },
     {
       id:"2",
@@ -25,7 +25,7 @@ export default function Serie() {
       genero:"GENERO:",
       generotxt:"Aventura",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,4/5,0",
+      avaliacaotxt:3.7,
     },
     {
       id:"3",
@@ -36,7 +36,7 @@ export default function Serie() {
       genero:"GENERO:",
       generotxt:"Comédia",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,6/5,0",
+      avaliacaotxt:4,
     }
   ];
  

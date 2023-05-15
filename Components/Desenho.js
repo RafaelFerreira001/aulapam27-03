@@ -13,7 +13,7 @@ export default function Desenho() {
       genero:"GENERO:",
       generotxt:"Animação",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,0/5,0",
+      avaliacaotxt:4,
     },
     {
       id:"2",
@@ -24,7 +24,7 @@ export default function Desenho() {
       genero:"GENERO:",
       generotxt:"Animação",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,3/5,0",
+      avaliacaotxt:4.3,
     },
     {
       id:"3",
@@ -35,7 +35,7 @@ export default function Desenho() {
       genero:"GENERO:",
       generotxt:"Animação/Aventura",
       avaliacao:"AVALIAÇÃO:",
-      avaliacaotxt:"4,1/5,0",
+      avaliacaotxt:4.1,
     },
   ];
  

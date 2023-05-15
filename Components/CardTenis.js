@@ -4,10 +4,16 @@ import { FontAwesome } from '@expo/vector-icons';
 
 
 const CardTenis = ({imagem,titulo,desc,desctxt,genero,generotxt,avaliacao,avaliacaotxt})=>{
+    let inteiro = parseInt(avaliacaotxt);
+    let resto  = avaliacaotxt - inteiro;
     let estrela = [];
-    for(let id = 0; id < avaliacaotxt; id++){
-        estrela[id] = <FontAwesome name="star" size={24} color="black" />
+    for(let id = 0; id < inteiro; id++){
+        estrela.push(<FontAwesome name="star" size={24} color="black" />);
     }
+    if(resto > 0){
+        estrela.push(<FontAwesome name="star-half-full" size={24} color="black" />);
+    }
+   
     return(
         <ImageBackground
             style={estilo.titulo}
